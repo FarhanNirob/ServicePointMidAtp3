@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Worker List</title>
+</head>
+<body>
+	<div>
+			<h2>Worker List</h2> 		
+	</div>
+
+	<a href="/adminHome">Back</a>|
+	<a href="/logout">Logout</a><br>
+
+	<table border="1">
+		<tr>
+			<td>Worker Id</td>
+			<td>Worker Name</td>
+			<td>Worker Email</td>
+			<td>Worker Password</td>
+			<td>Worker PhoneNo</td>
+		</tr>
+	<% for(var i=0; i < workerlist.length; i++){ %>
+		<tr>
+			<td><%= workerlist[i].user_id %></td>
+			<td><%= workerlist[i].user_name %></td>
+			<td><%= workerlist[i].user_email %></td>
+			<td><%= workerlist[i].user_password %></td>
+			<td><%= workerlist[i].user_phoneno %></td>
+			<td>
+				<a href="">Deactive</a> | 
+				
+			</td>
+		</tr>
+	<%  } %>
+	</table>
+
+</body>
+</html>

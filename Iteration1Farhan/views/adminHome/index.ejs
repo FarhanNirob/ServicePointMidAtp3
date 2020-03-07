@@ -1,0 +1,81 @@
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8" />
+<link rel="stylesheet" href="design/css/bootstrap.min.css">
+<script src="js/bo.otstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel = "stylesheet"
+   type = "text/css"
+   href = "design/style.css" />
+</head>
+
+<body>
+<div class="wrapper">
+    <!-- Sidebar -->
+    <nav id="sidebar">
+        <div class="sidebar-header">
+            <h3>Service Point</h3>
+        </div>
+
+        <ul class="list-unstyled components">
+             <li>
+                <a href="/admin">Notice Update</a>
+            </li>
+            <li>
+                <a href="/admin/viewemployee">Employee</a>
+            </li>
+            <li>
+                <a href="/admin/viewworker">Worker</a>
+            </li>
+            <li>
+                <a href="/admin/viewcustomer">Customer</a>
+            </li>
+            
+        </ul>
+    </nav>
+
+    <div class="container">    	
+    		<nav class="navbar navbar-light bg-light">
+              <span class="navbar-brand mb-0 h1">Welcome to servicepoint ,<%= admin.email %> </span>
+              <div class="nav navbar-nav navbar-right">
+               <a href="../login.html" class="navbar-brand"><strong>Logout</strong></a>
+            </div>
+            </nav>
+            <h1>Service Point</h1>
+            <p>Welcome Service Point </p>  
+            <div class="container">
+              <div class="row">
+                <div class="col-sm">
+                  We are a platform users to request for services 
+                </div>
+                <div class="col-sm">
+                  It is a free platform for you to find your job register for free 
+                </div>
+                <div class="col-sm">
+                  Our service is top of the line
+                </div>
+              </div>
+            </div>  
+            <div class="container">
+              <div class="row">
+                <div class="col-sm">
+                  <img src="design/1.png" alt="You order" class="col row" style="height: 150px;height: 15em;">
+                </div>
+                <div class="col-sm">
+                  <img src="design/2.jpg" alt="We process" class="col row" style="height: 150px;height: 15em;">
+                </div>
+                <div class="col-sm">
+                  <img src="design/3.jpeg" alt="We deliver" class="col row" style="height: 150px;height: 15em;">
+                </div>
+              </div>
+            </div> 	
+                
+</div>
+</body>
+</html>
+
+
+
