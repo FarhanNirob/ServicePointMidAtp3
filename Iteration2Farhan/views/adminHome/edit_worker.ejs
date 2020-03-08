@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Edit Worker</title>
+</head>
+<body>
+	<div>
+			<h2>Edit Worker</h2> 		
+	</div>
+
+	<a href="/admin">Back</a> |
+	<a href="/login">Logout</a><br>
+	
+	<form method="post">
+		<table>
+			<tr>
+				<td>Worker ID: </td>
+				<td><input type="text" readonly name="userid" value="<%= user.user_id %>"></td>
+			</tr>
+			<tr>
+				<td>Worker name: </td>
+				<td><input type="text" name="username" value="<%= user.user_name %>"></td>
+			</tr>
+			<tr>
+				<td>Worker email: </td>
+				<td><input type="text" name="useremail" value="<%= user.user_email %>"></td>
+			</tr>
+			<tr>
+				<td>Worker Password: </td>
+				<td><input type="text" name="userpassword" value="<%= user.user_password %>"></td>
+			</tr>
+			<tr>
+				<td>Worker PhoneNo: </td>
+				<td><input type="text" name="userphoneno" value="<%= user.user_phoneno %>"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>
+					<input type="submit" name="" value="Update"> 
+				</td>
+			</tr>
+		</table>
+	</form>
+
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Edit Employee</title>
+	<link rel="stylesheet" type="text/css" href="design/css/employeelist.css">
+</head>
+<body>
+	<div class="box">
+	
+	<div>
+			<h2>Edit Employee</h2> 		
+	</div>
+
+	<a href="/admin">Back</a> |
+	<a href="/login">Logout</a><br>
+	
+	<form method="post">
+		
+		
+		<table>
+			<tr>
+				<td>Employee ID: </td>
+				<td><input type="text" readonly name="userid" value="<%= user.user_id %>"></td>
+			</tr>
+			<tr>
+				<td>Employee name: </td>
+				<td><input type="text" name="username" value="<%= user.user_name %>"></td>
+			</tr>
+			<tr>
+				<td>Employee email: </td>
+				<td><input type="text" name="useremail" value="<%= user.user_email %>"></td>
+			</tr>
+			<tr>
+				<td>Employee Password: </td>
+				<td><input type="text" name="userpassword" value="<%= user.user_password %>"></td>
+			</tr>
+			<tr>
+				<td>Employee PhoneNo: </td>
+				<td><input type="text" name="userphoneno" value="<%= user.user_phoneno %>"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>
+					<input type="submit" name="" value="Update"> 
+				</td>
+			</tr>
+		</table>
+	
+	</form>
+	</div>
+	
+
+
+</body>
+</html>
